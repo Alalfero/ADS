@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ADS.iml" filepath="$PROJECT_DIR$/ADS.iml" />
       <module fileurl="file://$PROJECT_DIR$/02. Aufwandsabschätzung/MatrixMultiplikation in Java/ex421.tk448-fef5a274-9ba0-4a7b-89b8-1e21a3be2843.iml" filepath="$PROJECT_DIR$/02. Aufwandsabschätzung/MatrixMultiplikation in Java/ex421.tk448-fef5a274-9ba0-4a7b-89b8-1e21a3be2843.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03. ONotation/TernarySearch in Java/ex422.tk447-026e9ca2-3e48-476f-9889-70e3fd4613e3.iml" filepath="$PROJECT_DIR$/03. ONotation/TernarySearch in Java/ex422.tk447-026e9ca2-3e48-476f-9889-70e3fd4613e3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04. Sortieren/Mergesort in Java/ex423.tk424-5d0d58b1-5afe-4c06-aa83-8837ec48d11e.iml" filepath="$PROJECT_DIR$/04. Sortieren/Mergesort in Java/ex423.tk424-5d0d58b1-5afe-4c06-aa83-8837ec48d11e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04. Sortieren/BobSort in Java/ex423.tk458-a8d7bcfa-421e-4c87-95b9-380bc9f80fd6.iml" filepath="$PROJECT_DIR$/04. Sortieren/BobSort in Java/ex423.tk458-a8d7bcfa-421e-4c87-95b9-380bc9f80fd6.iml" />
       <module fileurl="file://$PROJECT_DIR$/01. Grundlagen/Power in Java/ex429.tk419-b19b1ea6-77bc-4562-b1aa-354c2c16c265.iml" filepath="$PROJECT_DIR$/01. Grundlagen/Power in Java/ex429.tk419-b19b1ea6-77bc-4562-b1aa-354c2c16c265.iml" />
       <module fileurl="file://$PROJECT_DIR$/01. Grundlagen/Das Sieb in Java/ex429.tk423-c13d8f20-c60b-4320-b3cd-08972fddbfdd.iml" filepath="$PROJECT_DIR$/01. Grundlagen/Das Sieb in Java/ex429.tk423-c13d8f20-c60b-4320-b3cd-08972fddbfdd.iml" />
     </modules>
