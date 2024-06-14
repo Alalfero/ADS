@@ -2,48 +2,58 @@ import java.util.Random;
 
 public class BobSort {
 
-    public static void swap(int[] a, int pos1, int pos2) {
-        int tmp = a[pos1];
-        a[pos1] = a[pos2];
-        a[pos2] = tmp;
-    }
+	public static void swap(int[] a, int pos1, int pos2) {
+		int tmp = a[pos1];
+		a[pos1] = a[pos2];
+		a[pos2] = tmp;
+	}
 
-    public static void sort(int[] a) {
-        // FIXME: implement
-    }
+	public static void sort(int[] a) {
+		for (int pos = 0; pos < a.length; pos++) {
+			int count = 0;
+			for (int k : a) if (k < a[pos]) count++;
 
-    // immer dieselben Pseudozufallszahlen!
-    private static final Integer DEFAULT_SEED = Integer.valueOf(654321);
+			while (count != pos) {
+				swap(a, pos, count);
 
-    public static int[] createRandomArray(int n) {
-        int[] a = new int[n];
-        for (int i=0; i<n; ++i)
-            a[i] = i;
-        // shuffle randomly.
-        Random rand = new Random(DEFAULT_SEED*n);
-        for (int i=0; i<n; ++i) {
-            int pos = rand.nextInt(n);
-            swap(a, i, pos);
-        }
-        return a;
-    }
+				count = 0;
+				for (int j : a) if (j < a[pos]) count++;
+			}
+		}
+	}
 
-    // optionally, benchmark sorting time on a random array
-    public static void runTest(int n) {
+	// immer dieselben Pseudozufallszahlen!
+	private static final Integer DEFAULT_SEED = Integer.valueOf(654321);
 
-        long startTime;
-        long endTime;
+	public static int[] createRandomArray(int n) {
+		int[] a = new int[n];
+		for (int i = 0; i < n; ++i)
+			a[i] = i;
+		// shuffle randomly.
+		Random rand = new Random(DEFAULT_SEED * n);
+		for (int i = 0; i < n; ++i) {
+			int pos = rand.nextInt(n);
+			swap(a, i, pos);
+		}
+		return a;
+	}
 
-        int[] a = createRandomArray(n);
-        startTime = System.currentTimeMillis();
-        sort(a);
-        endTime = System.currentTimeMillis();
-        System.out.format(
-                "[n=%d] : %d ms.\n",
-                n, (endTime - startTime));
-    }
+	// optionally, benchmark sorting time on a random array
+	public static void runTest(int n) {
 
-    public static void main(String[] args) {
-    }
+		long startTime;
+		long endTime;
+
+		int[] a = createRandomArray(n);
+		startTime = System.currentTimeMillis();
+		sort(a);
+		endTime = System.currentTimeMillis();
+		System.out.format(
+				"[n=%d] : %d ms.\n",
+				n, (endTime - startTime));
+	}
+
+	public static void main(String[] args) {
+	}
 
 }
